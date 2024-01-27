@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.container{
+    outline: 1px solid #000;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+}
+
+
+
+.element{
+    background: green;
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    font-family: Arial;
+    position: relative;
+
+ /* transition: all 1s; */
+
+
+    /* left: auto; es el estado inicial  para que funsione
+    el navegador debe calcular un punto de partida */
+
+
+
+    /* text-align: left; hay propiedades que son animables y propiedades que no */
+
+
+    /* property|duration|timing-function|delay */
+
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(.38,-1.24,.71,.76);
+   
+
+
+
+    clip-path: circle(70%);
+
+    /* transition-property:
+        clip-path, transform;
+    transition-duration:.5s, 1s;
+    transition-timing-function:cubic-bezier(1,.03,.78,.94);
+    transition-delay: 0s, .5s; */
+    /* transition-timing-function:steps(6,end); */
+
+    /* ease|linear|ease-in|ease-out|ease-in-out */
+
+    /* transition: clip-path .5s 0s,
+                transform 1s .5s; */
+
+}
+
+
+
+
+
+
+  /* .container:hover .element{
+    background-color:red;
+    transform: translate(100%)  scale(.5);  
+}   */
+
+
+
+
+
+
+ .container:hover .element{
+    clip-path: circle(50%);
+    transform: translate(100%);
+} 
